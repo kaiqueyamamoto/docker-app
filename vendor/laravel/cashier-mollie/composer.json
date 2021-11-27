@@ -1,0 +1,80 @@
+{
+    "name": "laravel/cashier-mollie",
+    "description": "Laravel Cashier provides an expressive, fluent interface to Mollie's subscription billing services.",
+    "keywords": [
+        "mollie",
+        "laravel",
+        "subscriptions",
+        "recurring",
+        "billing",
+        "SEPA",
+        "Apple Pay",
+        "credit card",
+        "debit card",
+        "Europe"
+    ],
+    "homepage": "https://github.com/mollie/laravel-cashier",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mollie.com",
+            "email": "support@mollie.com",
+            "homepage": "https://www.mollie.com",
+            "role": "Owner"
+        },
+        {
+            "name": "Sander van Hooft",
+            "email": "info@sandervanhooft.com",
+            "homepage": "https://www.sandervanhooft.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "dompdf/dompdf": "^1.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "mollie/laravel-mollie": "^2.9",
+        "moneyphp/money": "^3.2",
+        "nesbot/carbon": "^2.0"
+    },
+    "require-dev": {
+        "laravel/legacy-factories": "^1.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.3|^9.0",
+        "vlucas/phpdotenv": "^3.3|^4.0|^5.0",
+        "friendsofphp/php-cs-fixer": "^v2.17"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Laravel\\Cashier\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravel\\Cashier\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\Cashier\\CashierServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "./vendor/bin/phpunit tests",
+        "format": "./vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    }
+}
