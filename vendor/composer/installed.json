@@ -633,8 +633,8 @@
         },
         {
             "name": "codedge/laravel-selfupdater",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/codedge/laravel-selfupdater",
@@ -2887,8 +2887,8 @@
         },
         {
             "name": "joedixon/laravel-translation",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/joedixon/laravel-translation",
@@ -3289,6 +3289,96 @@
                 "source": "https://github.com/laravel/cashier"
             },
             "install-path": "../laravel/cashier"
+        },
+        {
+            "name": "laravel/cashier-mollie",
+            "version": "v1.16.2",
+            "version_normalized": "1.16.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/cashier-mollie.git",
+                "reference": "6acdadc69b00bde337c37a10b6e2f1838ac93217"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/cashier-mollie/zipball/6acdadc69b00bde337c37a10b6e2f1838ac93217",
+                "reference": "6acdadc69b00bde337c37a10b6e2f1838ac93217",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^1.0",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "mollie/laravel-mollie": "^2.9",
+                "moneyphp/money": "^3.2",
+                "nesbot/carbon": "^2.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v2.17",
+                "laravel/legacy-factories": "^1.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.3|^9.0",
+                "vlucas/phpdotenv": "^3.3|^4.0|^5.0"
+            },
+            "time": "2021-03-13T20:47:36+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Cashier\\CashierServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "Laravel\\Cashier\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mollie.com",
+                    "email": "support@mollie.com",
+                    "homepage": "https://www.mollie.com",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Sander van Hooft",
+                    "email": "info@sandervanhooft.com",
+                    "homepage": "https://www.sandervanhooft.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Cashier provides an expressive, fluent interface to Mollie's subscription billing services.",
+            "homepage": "https://github.com/mollie/laravel-cashier",
+            "keywords": [
+                "Apple Pay",
+                "Europe",
+                "billing",
+                "credit card",
+                "debit card",
+                "laravel",
+                "mollie",
+                "recurring",
+                "sepa",
+                "subscriptions"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/cashier-mollie/issues",
+                "source": "https://github.com/laravel/cashier-mollie/tree/v1.16.2"
+            },
+            "install-path": "../laravel/cashier-mollie"
         },
         {
             "name": "laravel/framework",
@@ -4768,8 +4858,8 @@
         },
         {
             "name": "mobidonia/laravel-dashboard-installer",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/mobidonia/laravel-dashboard-installer",

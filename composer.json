@@ -49,7 +49,7 @@
         "laravel-notification-channels/onesignal": "^2.3",
         "laravel-notification-channels/twilio": "^3.1",
         "laravel/cashier": "^12.4",
-
+        "laravel/cashier-mollie": "^1.16",
         "laravel/framework": "^8.22",
         "laravel/socialite": "^5.0",
         "laravel/tinker": "^2.5",

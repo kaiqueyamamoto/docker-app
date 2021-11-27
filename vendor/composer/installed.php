@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'dd984fb4194f2129e7faeea8ff27e860faee5cc2',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -92,8 +92,8 @@
             'dev_requirement' => false,
         ),
         'codedge/laravel-selfupdater' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../codedge/laravel-selfupdater',
             'aliases' => array(),
@@ -551,8 +551,8 @@
             'dev_requirement' => false,
         ),
         'joedixon/laravel-translation' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../joedixon/laravel-translation',
             'aliases' => array(),
@@ -610,6 +610,15 @@
             'reference' => '5eddb87418469e26d5945420b77f87b5eb57609a',
             'dev_requirement' => false,
         ),
+        'laravel/cashier-mollie' => array(
+            'pretty_version' => 'v1.16.2',
+            'version' => '1.16.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/cashier-mollie',
+            'aliases' => array(),
+            'reference' => '6acdadc69b00bde337c37a10b6e2f1838ac93217',
+            'dev_requirement' => false,
+        ),
         'laravel/framework' => array(
             'pretty_version' => 'v8.73.2',
             'version' => '8.73.2.0',
@@ -620,12 +629,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'dd984fb4194f2129e7faeea8ff27e860faee5cc2',
             'dev_requirement' => false,
         ),
         'laravel/legacy-factories' => array(
@@ -791,8 +800,8 @@
             'dev_requirement' => false,
         ),
         'mobidonia/laravel-dashboard-installer' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mobidonia/laravel-dashboard-installer',
             'aliases' => array(),
@@ -1195,8 +1204,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(

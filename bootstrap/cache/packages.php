@@ -176,6 +176,13 @@
       0 => 'Laravel\\Cashier\\CashierServiceProvider',
     ),
   ),
+  'laravel/cashier-mollie' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Cashier\\CashierServiceProvider',
+    ),
+  ),
   'laravel/legacy-factories' => 
   array (
     'providers' => 
