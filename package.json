@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "ngrok": "./ngrok http 80",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "clear":"rm -r storage/framework/cache/data/* || true && rm -r bootstrap/cache/* || true && rm -r storage/debugbar/* || true rm && -r storage/framework/views/* || true && rm storage/installed || true && rm storage/multilanguagemigrated || true && rm -r storage/logs/* || true",
+        
+        "zippc": "npm run clear && cp .env_pc .env && zip -r poscloud.zip ./ -x \"resources/lang/en/whatsapp.php\"  -x \"resources/lang/en/qrlanding.php\"  -x \"whatsapp_food.zip\"  -x \"ftiger.zip\"   -x \"qr_maker.zip\"  -x \"ngrok\" -x \"public/social/*\"  -x \"public/impactfront/*\"  -x \"node_modules/*\"   -x \"modules/*\"   -x \"*.git*\" -x \"*.DS_Store\" -x \".env_pc\"  -x \".env_ft\" -x \".env_qr\" -x \".env_wp\"", 
+        "zipwa": "npm run clear && cp .env_wp .env && zip -r whatsapp_food.zip ./ -x \"resources/lang/en/poslanding.php\"  -x \"resources/lang/en/qrlanding.php\"  -x \"poscloud.zip\"  -x \"ftiger.zip\"   -x \"qr_maker.zip\"  -x \"ngrok\" -x \"public/soft/*\" -x \"public/softd/*\"  -x \"public/impactfront/*\"  -x \"node_modules/*\"   -x \"modules/*\"   -x \"*.git*\" -x \"*.DS_Store\" -x \".env_pc\"  -x \".env_ft\" -x \".env_qr\" -x \".env_wp\"", 
+        "zipqr": "npm run clear &&cp .env_qr .env && zip -r qr_maker.zip ./  -x \"resources/lang/en/poslanding.php\"   -x \"resources/lang/en/whatsapp.php\"  -x \"poscloud.zip\"  -x \"whatsapp_food.zip\"  -x \"ftiger.zip\"  -x \"ngrok\" -x \"public/soft/*\" -x \"public/softd/*\"  -x \"public/social/*\"  -x \"node_modules/*\" -x \"modules/*\"  -x \"*.git*\" -x \"*.DS_Store\" -x \".env_pc\"  -x \".env_ft\" -x \".env_qr\"  -x \".env_wp\"",
+        "zipft": "npm run clear && cp .env_ft .env && zip -r ftiger.zip ./ -x \"resources/lang/en/poslanding.php\"  -x \"resources/lang/en/qrlanding.php\"  -x \"poscloud.zip\"  -x \"resources/lang/en/whatsapp.php\"  -x \"whatsapp_food.zip\" -x \"public/soft/*\" -x \"public/softd/*\"  -x \"qr_maker.zip\"  -x \"ngrok\" -x \"public/social/*\" -x \"node_modules/*\" -x \"modules/*\" -x \".env_pc\" -x \"*.git*\" -x \"*.DS_Store\"  -x \"public/js/appreact.js\"  -x \".env_ft\" -x \".env_qr\"  -x \".env_wp\"",
+        
+        
+        "zipupdate": "cat .diff-files.txt | zip -@ update.zip",
+        "zipdfinvoice":"cd modules/PdfInvoice && zip -r /Users/danieldimov/Desktop/PdfInvoice.zip ./",
+        "zipim":"cd modules/Impressum && zip -r /Users/danieldimov/Desktop/Impressum.zip ./",
+        "missingtranslationshow":"sail artisan translation:list-missing-translation-keys",
+        "missingtranslation":"sail artisan translation:sync-translations"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.19",
+        "bootstrap": "^4.1.0",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-echo": "^1.9.0",
+        "laravel-mix": "^4.0.7",
+        "laravel-mix-workbox": "^0.1.2",
+        "lodash": "^4.17.13",
+        "popper.js": "^1.12",
+        "pusher-js": "^7.0.2",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "vue": "^2.5.17",
+        "vue-template-compiler": "^2.6.11",
+        "workbox-webpack-plugin": "^5.1.3"
+    },
+    "dependencies": {
+        "react-color": "^2.18.1",
+        "react-indiana-drag-scroll": "^1.6.1",
+        "react-qrbtf": "^1.2.1"
+    }
+}

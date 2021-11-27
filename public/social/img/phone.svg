@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="557px" height="994px" viewBox="0 0 557 994" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#282828" offset="0%"></stop>
+            <stop stop-color="#282828" offset="100%"></stop>
+        </linearGradient>
+        <path d="M66.092437,0 L362.907563,0 C399.409408,-6.70528015e-15 429,29.590592 429,66.092437 L429,799.907563 C429,836.409408 399.409408,866 362.907563,866 L66.092437,866 C29.590592,866 3.28918962e-14,836.409408 0,799.907563 L0,66.092437 C-4.47018677e-15,29.590592 29.590592,6.70528015e-15 66.092437,0 Z" id="path-2"></path>
+        <filter x="-24.9%" y="-9.8%" width="149.9%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="22" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="32" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="22" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-18.2%" y="-6.5%" width="136.4%" height="118.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="10" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-8" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M0,439 L0,209 L0,774 C0,794.816199 17.1648019,812 38,812 L337,812 C357.835198,812 375,794.816199 375,774 L375,431 L375,38 C375,17.1838007 357.835198,0 337,0 L298.008403,0 C294.690054,6.09570923e-16 292,2.69005381 292,6.00840336 L292,7 L292,7 C292.332268,20.4447627 281.604267,31.1846381 268,31 L106,31 C92.1976498,31.1846381 81.4696486,20.4447627 82,7 L82,6.00840336 C82,2.69005381 79.3099462,8.23228845e-15 75.9915966,0 L72,0 L72,0 L62,0 L53,0 C52.715655,0 47.9233227,0 38,0 C17.1648019,0 0,17.1838007 0,38 L0,214" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-X-black" transform="translate(-378.000000, -241.000000)">
+            <g id="Group" transform="translate(442.000000, 283.000000)">
+                <g id="base">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                </g>
+                <g id="YOUR-DESIGN-HERE" transform="translate(26.000000, 26.000000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
